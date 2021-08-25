@@ -14,7 +14,7 @@ spec:
           env:
           - name: NPM_CONFIG_USERCONFIG
             value: /tekton/home/npm/.npmrc
-          image: uses:jenkins-x/jx3-pipeline-catalog/tasks/javascript/release.yaml@versionStream
+          image: uses:jenkins-x/jx3-pipeline-catalog/tasks/javascript/release.yaml@ed01d636b94b2ea51b878d9b5331bc4c88f6e8b1
           name: ""
           resources:
             requests:
@@ -28,7 +28,7 @@ spec:
             name: npmrc
           workingDir: /workspace/source
         steps:
-        - image: uses:jenkins-x/jx3-pipeline-catalog/tasks/git-clone/git-clone.yaml@versionStream
+        - image: uses:jenkins-x/jx3-pipeline-catalog/tasks/git-clone/git-clone.yaml@ed01d636b94b2ea51b878d9b5331bc4c88f6e8b1
           name: ""
           resources: {}
         - name: next-version

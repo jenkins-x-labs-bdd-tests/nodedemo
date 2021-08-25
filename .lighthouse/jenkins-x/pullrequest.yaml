@@ -11,7 +11,7 @@ spec:
       taskSpec:
         metadata: {}
         stepTemplate:
-          image: uses:jenkins-x/jx3-pipeline-catalog/tasks/javascript/pullrequest.yaml@versionStream
+          image: uses:jenkins-x/jx3-pipeline-catalog/tasks/javascript/pullrequest.yaml@ed01d636b94b2ea51b878d9b5331bc4c88f6e8b1
           name: ""
           resources:
             requests:
@@ -22,7 +22,7 @@ spec:
               memory: 512Mi
           workingDir: /workspace/source
         steps:
-        - image: uses:jenkins-x/jx3-pipeline-catalog/tasks/git-clone/git-clone-pr.yaml@versionStream
+        - image: uses:jenkins-x/jx3-pipeline-catalog/tasks/git-clone/git-clone-pr.yaml@ed01d636b94b2ea51b878d9b5331bc4c88f6e8b1
           name: ""
           resources: {}
         - name: jx-variables
