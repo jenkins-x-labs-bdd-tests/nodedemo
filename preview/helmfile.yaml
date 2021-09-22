@@ -12,6 +12,7 @@ releases:
 - chart: '../charts/{{ requiredEnv "APP_NAME" }}'
   name: preview
   wait: true
+  timeout: 900
   createNamespace: true
   namespace: '{{ requiredEnv "PREVIEW_NAMESPACE" }}'
   values:
